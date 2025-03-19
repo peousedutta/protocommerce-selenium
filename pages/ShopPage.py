@@ -24,6 +24,9 @@ class ShopPage():
     def goToCart(self):
         self.driver.find_element(*self.gotToCartBtn).click()
     
+    def cartPageDataCheck(self):
+        pass
+    
     def proceedWithCheckout(self):
         self.driver.find_element(*self.proceedWithCheckoutBtn).click()
         return CheckoutPage(self.driver)
